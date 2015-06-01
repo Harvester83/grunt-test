@@ -11,7 +11,7 @@ module.exports = function(grunt) {
                 },
                 files: [{
                     expand: true,
-                    cwd: 'src/sass',
+                    cwd: 'src/scss',
                     src: ['*.scss'],
                     dest: 'src/css',
                     ext: '.css'
@@ -22,17 +22,13 @@ module.exports = function(grunt) {
         concat: {
             dist: {
                 src: ['src/css/style.css', 'src/css/main.css'],
-                dest: 'src/css/dist/global.css'
+                dest: 'dist/global.css'
             },
             dist2: {
                 src: ['src/js/main.js',
-                    'src/js/build.js',
-                    'src/js/moduleOne.js',
-                    'src/js/moduleFour.js',
-                    'src/js/moduleThree.js',
-                    'src/js/moduleTwo.js'
+                    'src/js/script.js'
                 ],
-                dest: 'src/css/dist/global.js'
+                dest: 'dist/global.js'
             }
         },
 
@@ -40,9 +36,9 @@ module.exports = function(grunt) {
             target: {
                 files: [{
                     expand: true,
-                    cwd: 'src/css/dist',
+                    cwd: 'dist',
                     src: ['*.css', '!*.min.css'],
-                    dest: 'src/css/dist',
+                    dest: 'dist',
                     ext: '.min.css'
                 }]
             }
@@ -51,17 +47,17 @@ module.exports = function(grunt) {
         uglify: {
             my_target: {
                 files: {
-                    'src/css/dist/global.min.js': ['src/css/dist/global.js']
+                    'dist/global.min.js': ['dist/global.js']
                 }
             }
         },
 
-        watch: {
+          watch: {
             options: {
                 livereload: true
             },
             css: {
-                files: ['src/sass/*.scss'],
+                files: ['src/scss/*.scss'],
                 tasks: ['sass', 'concat', 'cssmin']
             },
             js: {
