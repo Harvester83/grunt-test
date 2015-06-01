@@ -1,0 +1,21 @@
+{
+  "name": "grunt-test",
+  "version": "0.0.0",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components",
+    "test",
+    "tests",
+    "vendor"
+  ],
+  "homepage": "https://github.com/Harvestr83/phpmanual",
+  "authors": [
+    "Dik83 <rashad.suleymanov83@gmail.com>"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "requirejs": "~2.1.17"
+  }
+}
