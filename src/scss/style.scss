@@ -16,18 +16,26 @@ nav {
 
 .box {
     width: 30%;
-    border: 1px solid #666;
+    border: 10px solid #666;
     padding: 10px;
+    margin: 10px;
 
   h4 {
     font-size: 35px;
+    padding: 2px;
+    margin: 2px;
+    color: #424242;
+    border: 2px solid #838383;
   }
 
   p {
-    color: #000;
+    color: #3342c1;
     font-size: 14px;
     font-family: Georgia, "Bitstream Charter", serif;
-
   }
 
+}
+
+body {
+  background: #838383;
 }

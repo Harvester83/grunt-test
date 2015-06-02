@@ -11,14 +11,22 @@ nav a {
 
 .box {
   width: 30%;
-  border: 1px solid #666;
-  padding: 10px; }
+  border: 10px solid #666;
+  padding: 10px;
+  margin: 10px; }
   .box h4 {
-    font-size: 35px; }
+    font-size: 35px;
+    padding: 2px;
+    margin: 2px;
+    color: #424242;
+    border: 2px solid #838383; }
   .box p {
-    color: #000;
+    color: #3342c1;
     font-size: 14px;
     font-family: Georgia, "Bitstream Charter", serif; }
+
+body {
+  background: #838383; }
 
 body {
   font: 100% Helvetica, sans-serif;
