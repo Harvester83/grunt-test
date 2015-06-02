@@ -8,3 +8,14 @@ nav a {
   display: block;
   padding: 6px 12px;
   text-decoration: none; }
+
+.box {
+  width: 30%;
+  border: 1px solid #666;
+  padding: 10px; }
+  .box h4 {
+    font-size: 35px; }
+  .box p {
+    color: #000;
+    font-size: 14px;
+    font-family: Georgia, "Bitstream Charter", serif; }
